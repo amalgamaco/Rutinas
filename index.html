@@ -267,14 +267,14 @@ function renderSex(){
         '</div>'+
       '</div>'+
       '<div class="input-lbl">Peso (kg)</div>'+
-      '<input class="num-input" type="number" step="2.5" value="'+(lw||ex.base)+'" id="w_'+id+'" oninput="sessionInputs[''+ex.name+''].weight=+this.value">'+
+      '<input class="num-input" type="number" step="2.5" value="'+(lw||ex.base)+'" id="w_'+id+'" oninput="sessionInputs[\''+ex.name+'\'].weight=+this.value">'+
       '<div style="margin-top:14px"><div class="input-lbl">RPE</div>'+
       '<div class="rpe-row">'+
-        '<button class="rpe-btn" id="r7_'+id+'" onclick="setRPE(''+ex.name+'',7,''+id+'')">7<div class="rpe-hint">cómodo</div></button>'+
-        '<button class="rpe-btn" id="r8_'+id+'" onclick="setRPE(''+ex.name+'',8,''+id+'')">8<div class="rpe-hint">exigente</div></button>'+
-        '<button class="rpe-btn" id="r9_'+id+'" onclick="setRPE(''+ex.name+'',9,''+id+'')">9<div class="rpe-hint">al límite</div></button>'+
+        '<button class="rpe-btn" id="r7_'+id+'" onclick="setRPE(\''+ex.name+'\',7,\''+id+'\')">7<div class="rpe-hint">cómodo</div></button>'+
+        '<button class="rpe-btn" id="r8_'+id+'" onclick="setRPE(\''+ex.name+'\',8,\''+id+'\')">8<div class="rpe-hint">exigente</div></button>'+
+        '<button class="rpe-btn" id="r9_'+id+'" onclick="setRPE(\''+ex.name+'\',9,\''+id+'\')">9<div class="rpe-hint">al límite</div></button>'+
       '</div></div>'+
-      '<button class="save-btn" onclick="saveEx(''+ex.name+'',''+id+'')">Guardar</button>'+
+      '<button class="save-btn" onclick="saveEx(\''+ex.name+'\',\''+id+'\')">Guardar</button>'+
       '<div class="saved-msg" id="msg_'+id+'">✓ Guardado</div>'+
     '</div>';
   });
